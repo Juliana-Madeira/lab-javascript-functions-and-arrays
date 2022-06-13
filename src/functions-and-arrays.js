@@ -103,7 +103,25 @@ function averageWordLength(arr) {
 
 
 // Bonus - Iteration #4.1
-function avg() {}
+const mixedArr41Bonus = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
+
+function avg(arr) {
+  if(!arr.length){
+    return null;
+  }
+  let mixedSum = 0;
+  let mixedAverage = 0;
+  arr.forEach(element => {
+    if(typeof element == 'number'){
+      mixedSum += element;               //sum each number
+    } else if(typeof element == 'string'){
+      mixedSum += element.length;         //sum each string length 
+    } else if (typeof element == 'boolean'){
+      mixedSum += element ? 1 : 0;
+    } 
+  })
+  mixedAverage = Number((mixedSum/arr.length).toFixed(2));
+  return mixedAverage;
 
 
 /*
