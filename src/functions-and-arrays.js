@@ -73,21 +73,18 @@ function sum(arr) {
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
-
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
 function averageNumbers(arr) {
-  let media = 0;
-  let soma = 0;
-
-  for (let i =0; i < arr.length; i+=1){
-    soma += arr[i]; 
-    media = (soma / arr.length);
-    
+  let average = 0;
+  if(!arr.length){
+    return null;
   }
-  return media;
+  average = sumNumbers(arr)/arr.length;
+  return average;
 }
-averageNumbers(numbersAvg)
+
+
 /*
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
