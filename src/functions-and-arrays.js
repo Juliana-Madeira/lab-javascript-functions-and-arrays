@@ -5,7 +5,7 @@ function maxOfTwoNumbers(num1,num2) {
   } else if (num2 > num1) {
     return num2;
   } else if (num1 === num2){
-    return "Os dois números são iguais";
+    return num1
   } 
 }
 
