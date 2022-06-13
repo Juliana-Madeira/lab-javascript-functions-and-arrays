@@ -8,7 +8,7 @@ function maxOfTwoNumbers(num1,num2) {
     return "Os dois números são iguais";
   } 
 }
-maxOfTwoNumbers (3,6);
+
 
 
 
@@ -26,27 +26,24 @@ function findLongestWord(arr) {
       longest = word;
     }
   });
-  console.log(longest);
+  return(longest);
 };
 
-findLongestWord(words)
-
-  
   
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers(numbers) {
+function sumNumbers(arrNumbers) {
   let sum = 0;
-
-  for (let i=0; i < numbers.length; i++){
-    sum += numbers[i];
+  if(!arrNumbers.length){
+    return 0;
+  }
+  for(let i = 0; i < arrNumbers.length; i++){
+    sum += arrNumbers[i];
   }
   return sum;
- }
-sumNumbers(numbers); 
-
+}
 
 
 // Iteration #3.1 Bonus:
