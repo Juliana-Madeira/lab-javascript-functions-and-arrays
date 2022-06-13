@@ -124,7 +124,7 @@ function avg(arr) {
   return mixedAverage;
 
 
-/*
+
 // Iteration #5: Unique arrays
 const wordsUnique = [
   'crab',
@@ -147,7 +147,13 @@ function uniquifyArray() {}
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(arr, word) {
+  if(!arr.length){
+    return null;
+  }
+  return arr.includes(word);
+}
+
 
 
 
@@ -216,4 +222,4 @@ function greatestProduct() {}
     greatestProduct
   };
 }
-*/
+
